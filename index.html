@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulario de Encuesta</title>
+  </head>
+  <body>
+    <h1 id="title">Formulario de Encuesta</h1>
+    <p id="description">
+      Gracias por tomarse el tiempo para ayudarnos a mejorar
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label"
+          >Nombre:
+          <input
+            id="name"
+            type="text"
+            placeholder="Ingrese su nombre"
+            required
+          />
+        </label>
+        <label id="email-label"
+          >Correo electrónico:
+          <input
+            id="email"
+            type="email"
+            placeholder="ejemplo@ejemplo.com"
+            required
+          />
+        </label>
+        <label id="number-label"
+          >Edad (opcional):
+          <input
+            id="number"
+            type="number"
+            min="18"
+            max="120"
+            placeholder="18"
+            required
+          />
+        </label>
+        <div>
+          <select id="dropdown">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+          <p>lorem ipsum</p>
+          <input type="radio" value="Bueno" name="bueno" />
+          <input type="radio" value="Muy-Bueno" name="bueno" />
+        </div>
+        <div>
+          <input type="radio" value="Regular" name="regular" />
+          <input type="radio" value="Malo" name="regular" />
+        </div>
+        <div>
+          <p>lorem ipsum</p>
+          <input type="checkbox" value="verdadero" />
+          <input type="checkbox" value="falso" />
+        </div>
+        <textarea></textarea>
+        <input id="submit" type="submit" value="Enviar" />
+      </fieldset>
+    </form>
+  </body>
+</html>
